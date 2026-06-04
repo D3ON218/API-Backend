@@ -1,0 +1,59 @@
+--Pasos para la correcta ejecucion de la pagina, teniendo en cuenta la creacion desde 0
+=========================================================================================
+>Creacion del entorno virtual:
+=========================================================================================
+>Instalacion de librerias:
+=========================================================================================
+>Creacion de la DB en workbench:
+
+Una vez hechos los pasos anteriores, debemos crear la DB, la cual posee algunos datos
+de prueba que son necesarios para poder probar las funciones de nuestra pagina, por ello
+debemos crear la DB en el orden descrito a continuacion:
+
+(Es importante conocer tanto el usuario que se usara por default, siendo el usuario root 
+el recomendado, como la contrasena colocada durante la creacion de este mismo, ya que 
+se usaran mas adelante en la ejecucion de la pagina)
+
+1.- Iniciar My sql workbench en la Pc destino:
+
+	-Iniciaremos el gestor de base de datos MySql Workbench
+	Dentro de una nueva coneccion, la cual llamaremos a libertad, debemos revisar que:
+
+		-EL usuario root sea el gestor de la coneccion
+		Los parametros de coneccion son los default de MySql Worckbench:
+			
+			-Puerto= 3306
+			-Usuario= root
+			-host= 127.0.0.1 o localhost
+	
+	-Una vez revisados estos parametros, crearemos la coneccion, y de la carpeta en la
+	que tengamos almacenado nuestro proyecto, entraremos a la ruta donde esten 
+	almacenados los scripts de nuestra DB
+	
+	-En la coneccion creada, con la opcion 'open sql script' del menu File en la parte 
+	superior, importaremos los siguientes archivos:
+		 
+		1.-Tables
+		2.-AlterTables
+		3.-DatosPrueba
+		
+	-El resto de scripts son opcionales para la prueba
+
+2.- Ejecucion de la Base de datos:
+
+	-Dentro de estos scripts, y en el orden ya establecido, encontraremos las sentencias
+	SQL de cada archivo, las cuales deberan de ser ejecutadas de cualquiera de las 
+	siguientes maneras:
+
+		-Por numeracion establecida dentro del documento
+		-Por orden de aparicion en pantalla
+		-Por seccion de comentarios
+
+	Una vez que al menos estos 3 scripts hayan sido completamente introducidos en la 
+	Base de Datos, pasaremos al siguiente punto en la ejecucion en Visual Studio Code
+
+=========================================================================================
+>Ajustes al codigo en Visual Studio Code:
+=========================================================================================
+
+Una vez teniendo los pasos anteriores completamente realizados, 
